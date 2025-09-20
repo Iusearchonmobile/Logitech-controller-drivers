@@ -11,7 +11,7 @@ class OnScreenKeyboard(tk.Toplevel):
     def __init__(self, master, command_queue):
         super().__init__(master)
         self.queue = command_queue
-        self.configure(bg='black')
+        self.configure(bg='gray15')
         self.overrideredirect(True)
         self.attributes("-topmost", True)
         try:
@@ -40,7 +40,7 @@ class OnScreenKeyboard(tk.Toplevel):
 
     def build_keyboard(self):
         for r, row_keys in enumerate(self.key_layout):
-            row_frame = tk.Frame(self, bg='black')
+            row_frame = tk.Frame(self, bg='gray15')
             row_frame.grid(row=r, column=0, padx=5, pady=2)
             button_row = []
             for c, key_text in enumerate(row_keys):
@@ -165,4 +165,5 @@ def start_keyboard_service():
     keyboard_process = multiprocessing.Process(target=_run_keyboard_gui, args=(command_queue,), daemon=True)
     keyboard_process.start()
     print("on screen keyboard started")
+
     return command_queue
