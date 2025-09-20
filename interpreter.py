@@ -10,7 +10,7 @@ import multiprocessing
 #change these
 #vendor id for logitech devices is usually 0x046d
 VENDOR_ID = 0x046d
-PRODUCT_ID = 0xC216
+PRODUCT_ID = #add your product id here
 
 REPEAT_DELAY = 0.05
 
@@ -136,4 +136,5 @@ def main():
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()
+
     main()
