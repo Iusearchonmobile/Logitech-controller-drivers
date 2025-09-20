@@ -6,7 +6,7 @@ import sys
 #vendor id for logitech devices is usually 0x046d
 
 VENDOR_ID = 0x046D
-PRODUCT_ID = 0xC216
+PRODUCT_ID = #add your product id here
 
 # Find the device
 dev = usb.core.find(idVendor=VENDOR_ID, idProduct=PRODUCT_ID)
@@ -58,4 +58,5 @@ except KeyboardInterrupt:
 
 finally:
     # release the device
+
     usb.util.dispose_resources(dev)
