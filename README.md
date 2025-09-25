@@ -13,6 +13,10 @@ But if that didnt work, run test.py and try to find the usb output data when you
 ## For windows users
 You need to use Zadig to actually replace the controller drivers from the regular system drivers to WinUsb
 
+## What is this useful for?
+
+This was made so you can make your old worthless logitech controller into a button bar! By opening the controller and replacing these coontroller buttons with regular buttons
+
 ## Troubleshooting
 
 just use chatgpt dude
