@@ -10,7 +10,7 @@ import multiprocessing
 #change these
 #vendor id for logitech devices is usually 0x046d
 VENDOR_ID = 0x046d
-PRODUCT_ID = #add your product id here
+PRODUCT_ID = 0xC216
 
 REPEAT_DELAY = 0.05
 
@@ -73,8 +73,9 @@ BUTTON_MAP = {
 }
 
 
-def main():
-    global command_queue
+
+if __name__ == '__main__':
+    multiprocessing.freeze_support()
     command_queue = start_keyboard_service()
 
     dev = usb.core.find(idVendor=VENDOR_ID, idProduct=PRODUCT_ID)
@@ -132,9 +133,3 @@ def main():
             time.sleep(1)
         usb.util.dispose_resources(dev)
         print("USB resources released.")
-
-
-if __name__ == '__main__':
-    multiprocessing.freeze_support()
-
-    main()
