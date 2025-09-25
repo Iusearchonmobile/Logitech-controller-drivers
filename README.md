@@ -15,7 +15,7 @@ You need to use Zadig to actually replace the controller drivers from the regula
 
 ## What is this useful for?
 
-This was made so you can make your old worthless logitech controller into a button bar! By opening the controller and replacing these coontroller buttons with regular buttons
+This was made so you can make your old worthless logitech controller into a button bar! By opening the controller and replacing the controller buttons with regular buttons
 
 ## Troubleshooting
 
